@@ -61,4 +61,14 @@ class User
     {
         $this->Roll = $Roll;
     }
+	
+	
+	
+	
+	
+	//Metodos
+	public function Saludar()
+	{
+		return ("Hola mi nombre es: ". $this -> name. " y mi Ci es: ". $this -> Ci);
+	}
 }
