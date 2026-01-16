@@ -1,0 +1,14 @@
+{
+    "name": "carlo/scriptphp",
+    "autoload": {
+        "psr-4": {
+            "Carlo\\Scriptphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Carlos"
+        }
+    ],
+    "require": {}
+}

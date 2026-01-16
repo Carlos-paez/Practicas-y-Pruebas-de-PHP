@@ -1,0 +1,9 @@
+RewriteEngine On
+RewriteBase /
+
+# Evita reescritura si es un archivo o directorio real
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirige todo a index.php pasando la ruta como parámetro 'url' o 'pagina'
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
